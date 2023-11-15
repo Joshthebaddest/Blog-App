@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs'); -%>
+
+<section class="Blog content-pad">
+    <% if(blog.length > 0){ %>
+        <% blog.forEach(b => { %>
+            <h1><%= b.title %></h1>
+            <p><%= b.post %></p>
+        <% }) %>
+    <% } else { %>
+        <p>no blog found</p>
+        <% } %>
+</section>
+
+<%- include('partials/footer.ejs'); -%>

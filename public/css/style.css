@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    color: black;
+    padding: 0 50px;
+}
+ul {
+    display: flex;
+}
+li {
+    margin: 0 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    border-bottom: 1px solid black;
+}
+.content-pad {
+    padding: 10px 50px;
+}
+
+/* footer */
+footer {
+    background-color: aqua;
+    text-align: center;
+}
+.home div p a {
+    color: blue;
+    text-decoration: underline;
+}
