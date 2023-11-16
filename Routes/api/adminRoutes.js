@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const blogPost = require('../model/post');
+const blogPost = require('../../model/post');
 
 
 // router.get('/', (req, res)=>{
@@ -10,8 +10,6 @@ const blogPost = require('../model/post');
 // });
 router.route('/compose')
     .get((req, res)=>{
-        const { headertext, bodytext } = (req.body);
-        console.log(`headertext is ${headertext} and bodytext is ${bodytext}`)
         res.render('compose');
     })
     .post((req, res)=>{
